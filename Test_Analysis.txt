@@ -1,0 +1,33 @@
+
+Analysis of Test Results :::
+
+The code was tested with the following parameters :
+Test 1 : One argument only 
+	argument 1 --- >> SeedURL --- >> https://en.wikipedia.org/wiki/Hugh_of_Saint-Cher
+	Result : 1000 links crawled and retrieved and stored in file Links_Crawled_WITHOUT_Keyword.txt
+	Time for Crawl : 0 hours	23minutes	40seconds
+	Analysis : Out of all the pages crawled , all of them are printed in the file 
+	
+Test 2 : Two arguments
+	argument 1 --- >> SeedURL --- >> https://en.wikipedia.org/wiki/Hugh_of_Saint-Cher	
+	argument 2 ---->> keyword --- >> concordance
+	Result : 1000 links Crawled. Out of that 56 links were relevant (ie. 56 links contain the keyword 'concordance' <<soft-matching>> ) and were printed in Links_Crawled_WITH_Keyword.txt
+	Time for Crawl : 0 hours	27minutes	35seconds
+	Analysis : Out of 1000 Pages crawled , 56 pages had the word 'concordance' in it.
+			   The proportion of pages that contain the keyword to the ones that were crawled = (56:1000) = 0.056 = 5.6%
+			   This shows 5.6% of the Crawled pages contain the keyword 'concordance'
+			   
+   
+			   
+
+Code Organization :
+2 packages :
+			com.sharmo.crawler ---> CrawlerRun.java , Crawler.java , CrawlerHelper.java , RetrievedLinks.java
+			com.sharmo.filewriter --->TextFileWriter.java
+External JAR used :
+					jsoup-1.8.3.jar
+					
+					
+			
+	
+	
